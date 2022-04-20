@@ -1,0 +1,137 @@
+* {
+  font-family: "Noto Serif JP", serif;
+}
+header {
+  background-color: rgba(255, 253, 253, 0);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 37px;
+  font-family: "Noto Serif JP", serif;
+  padding: 32px;
+  padding-left: 74px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: rgba(247, 235, 217, 0.68);
+}
+
+.topname {
+  font-size: 73px;
+  margin-top: -120px;
+}
+
+.mokuzi {
+  display: flex;
+  justify-content: space-around;
+  font-size: 29px;
+  margin-top: 120px;
+}
+
+.about {
+  background: rgba(247, 235, 217, 0.21);
+  height: 100vh;
+}
+.like {
+  background: rgba(247, 235, 217, 0.68);
+  height: 100vh;
+}
+.skill {
+  background: rgba(247, 235, 217, 0.21);
+  height: 100vh;
+}
+.about-tittle {
+  font-size: 48px;
+  z-index: 1;
+  padding-top: 105px;
+  padding-left: 358px;
+}
+.about-tittle::first-letter {
+  color: #c1f7d3;
+  font-size: 150px;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  padding-top: 10px;
+  padding-left: 244px;
+}
+
+.about-contents-detail {
+  padding: 30px;
+  font-size: 25px;
+}
+
+.name1,
+.name2,
+.name3 {
+  font-size: 28px;
+}
+.name1::before {
+}
+.name1:after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  left: 275px;
+  top: 1368px;
+  border-bottom: solid 3px black;
+}
+
+.about-name-answer {
+  padding: 29px;
+  padding-top: 13px;
+  padding-left: 41px;
+  height: 36px;
+  width: 408px;
+  transition: opacity 1s, transform 2s;
+}
+
+.about-img {
+  width: 574px;
+  height: 486px;
+  position: absolute;
+  top: 1110px;
+  left: 638px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.like-tittle::first-letter {
+  color: #daebf7;
+  font-size: 150px;
+}
+.like-page {
+  display: flex;
+  flex-direction: column;
+  padding-left: 53%;
+  padding-top: 10%;
+}
+
+.like-image1 {
+  position: absolute;
+  top: 1969px;
+  left: 298px;
+  object-fit: cover;
+  width: 574px;
+  height: 486px;
+}
+
+.skill-tittle::first-letter {
+  color: #daebf7;
+  font-size: 150px;
+}
+
+.skill-page {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25%;
+  padding-top: 11%;
+}
