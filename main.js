@@ -129,7 +129,7 @@ aboutanswer7.addEventListener("mouseout", function () {
 aboutanswer8.addEventListener("mouseover", function () {
   aboutanswer8.style.opacity = "1";
   aboutanswer8.style.transform = "translateX(0px)";
-  aboutanswer8.textContent = "JavaScript";
+  aboutanswer8.textContent = "勉強中…";
 });
 
 // JavaScriptの下にマウスが離れたとき
