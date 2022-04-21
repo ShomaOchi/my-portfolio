@@ -19,8 +19,9 @@ header {
   padding: 32px;
   padding-left: 74px;
   display: flex;
+  box-shadow: 0px 2px 0px;
 }
-.header2 {
+#header2 {
   width: 334px;
 }
 .icon-container {
@@ -139,7 +140,7 @@ a.sec:hover .mokuzi3:after {
   padding-left: 358px;
 }
 .about-tittle::first-letter {
-  color: #c1f7d3;
+  color: #daebf7;
   font-size: 150px;
 }
 
@@ -340,7 +341,7 @@ a.sec:hover .mokuzi3:after {
   padding-left: 122px;
 }
 .like-tittle::first-letter {
-  color: #daebf7;
+  color: #c1f7d3;
   font-size: 150px;
 }
 .like-page {
@@ -396,7 +397,7 @@ a.sec:hover .mokuzi3:after {
   padding-left: 118px;
 }
 .skill-tittle::first-letter {
-  color: #daebf7;
+  color: #ab6563;
   font-size: 150px;
 }
 .skill-contens {
