@@ -1,15 +1,40 @@
 * {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Kiwi Maru", serif;
+  scroll-behavior: smooth;
+  margin: 0;
 }
+.bangi-img {
+  z-index: -1;
+  position: absolute;
+  width: fill;
+  height: 117.65vh;
+}
+
 header {
-  background-color: rgba(255, 253, 253, 0);
+  background-color: rgba(247, 235, 217, 0.68);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   font-size: 37px;
-  font-family: "Noto Serif JP", serif;
   padding: 32px;
   padding-left: 74px;
+  display: flex;
+}
+.header2 {
+  width: 334px;
+}
+.icon-container {
+  width: 330px;
+  margin-left: 740px;
+  display: flex;
+  justify-content: space-around;
+}
+.icon-img {
+  width: 75px;
+  height: 75px;
+}
+.icon-img:hover {
+  opacity: 0.5;
 }
 
 .top {
@@ -23,7 +48,23 @@ header {
 
 .topname {
   font-size: 73px;
-  margin-top: -120px;
+  margin-top: -236px;
+}
+.topname:before {
+  content: "";
+  position: absolute;
+  left: 550px;
+  width: 400px;
+  height: -50px;
+  border-bottom: solid 3px black;
+}
+.topname:after {
+  content: "";
+  position: absolute;
+  left: 550px;
+  width: 400px;
+  height: 140px;
+  border-bottom: solid 3px black;
 }
 
 .mokuzi {
@@ -31,6 +72,52 @@ header {
   justify-content: space-around;
   font-size: 29px;
   margin-top: 120px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
+.mokuzi1:after {
+  content: "";
+  position: absolute;
+  left: 210px;
+  width: 0;
+  height: 68px;
+  transition: all 0.5s;
+  border-bottom: solid 3px;
+}
+a.sec:hover .mokuzi1:after {
+  width: 100px;
+}
+.mokuzi2:after {
+  content: "";
+  position: absolute;
+  left: 730px;
+  width: 0;
+  height: 68px;
+  transition: all 0.5s;
+  border-bottom: solid 3px;
+}
+a.sec:hover .mokuzi2:after {
+  width: 100px;
+}
+
+.mokuzi3:after {
+  content: "";
+  position: absolute;
+  left: 1232px;
+  width: 0;
+  height: 68px;
+  transition: all 0.5s;
+  border-bottom: solid 3px;
+}
+a.sec:hover .mokuzi3:after {
+  width: 100px;
 }
 
 .about {
@@ -69,29 +156,171 @@ header {
   font-size: 25px;
 }
 
-.name1,
-.name2,
-.name3 {
+/* 下線 */
+#name1,
+#name2,
+#name3,
+#name4,
+#name5,
+#name6,
+#name7,
+#name8 {
   font-size: 28px;
 }
-.name1::before {
+#name1::before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  left: 254px;
+  top: 1390px;
+  border: solid 8px transparent;
+  border-bottom: solid 8px black;
+  border-right: solid 8px black;
 }
-.name1:after {
+#name1:after {
   position: absolute;
   content: "";
   width: 250px;
-  left: 275px;
-  top: 1368px;
+  left: 269px;
+  top: 1403px;
+  border-bottom: solid 3px black;
+}
+#name2::before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  left: 254px;
+  top: 1536px;
+  border: solid 8px transparent;
+  border-bottom: solid 8px black;
+  border-right: solid 8px black;
+}
+#name2:after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  left: 269px;
+  top: 1549px;
+  border-bottom: solid 3px black;
+}
+#name3::before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  left: 254px;
+  top: 1675px;
+  border: solid 8px transparent;
+  border-bottom: solid 8px black;
+  border-right: solid 8px black;
+}
+#name3:after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  left: 269px;
+  top: 1688px;
   border-bottom: solid 3px black;
 }
 
+#name4::before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  left: 913px;
+  top: 2234px;
+  border: solid 8px transparent;
+  border-bottom: solid 8px black;
+  border-right: solid 8px black;
+}
+#name4:after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  left: 929px;
+  top: 2247px;
+  border-bottom: solid 3px black;
+}
+#name5::before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  left: 913px;
+  top: 2381px;
+  border: solid 8px transparent;
+  border-bottom: solid 8px black;
+  border-right: solid 8px black;
+}
+#name5:after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  left: 929px;
+  top: 2394px;
+  border-bottom: solid 3px black;
+}
+#name6::before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  left: 913px;
+  top: 2522px;
+  border: solid 8px transparent;
+  border-bottom: solid 8px black;
+  border-right: solid 8px black;
+}
+#name6:after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  left: 929px;
+  top: 2535px;
+  border-bottom: solid 3px black;
+}
+#name7::before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  left: 293px;
+  top: 3089px;
+  border: solid 8px transparent;
+  border-bottom: solid 8px black;
+  border-right: solid 8px black;
+}
+#name7:after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  left: 309px;
+  top: 3102px;
+  border-bottom: solid 3px black;
+}
+#name8::before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  left: 293px;
+  top: 3227px;
+  border: solid 8px transparent;
+  border-bottom: solid 8px black;
+  border-right: solid 8px black;
+}
+#name8:after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  left: 309px;
+  top: 3240px;
+  border-bottom: solid 3px black;
+}
 .about-name-answer {
   padding: 29px;
   padding-top: 13px;
   padding-left: 41px;
   height: 36px;
   width: 408px;
-  transition: opacity 1s, transform 2s;
+  transition: opacity 1s, transform 1s;
+  font-weight: normal;
+  font-size: 25px;
 }
 
 .about-img {
@@ -104,6 +333,12 @@ header {
   z-index: -1;
 }
 
+.like-tittle {
+  font-size: 48px;
+  z-index: 1;
+  padding-top: 5px;
+  padding-left: 122px;
+}
 .like-tittle::first-letter {
   color: #daebf7;
   font-size: 150px;
@@ -111,8 +346,15 @@ header {
 .like-page {
   display: flex;
   flex-direction: column;
-  padding-left: 53%;
-  padding-top: 10%;
+  padding-left: 656px;
+  padding-top: 108px;
+}
+.like-contents {
+  padding-left: 251px;
+}
+.like-contents-detail {
+  padding: 30px;
+  font-size: 25px;
 }
 
 .like-image1 {
@@ -122,16 +364,69 @@ header {
   object-fit: cover;
   width: 574px;
   height: 486px;
+  animation: anime 15s infinite ease;
+}
+.like-image1:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.like-image1:nth-of-type(3) {
+  animation-delay: 10s;
 }
 
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.skill-tittle {
+  font-size: 48px;
+  z-index: 1;
+  padding-left: 118px;
+}
 .skill-tittle::first-letter {
   color: #daebf7;
   font-size: 150px;
+}
+.skill-contens {
+  padding: 13px;
+  padding-top: 25px;
+}
+.skill-contens-detail {
+  padding: 30px;
+  font-size: 25px;
 }
 
 .skill-page {
   display: flex;
   flex-direction: column;
-  padding-left: 25%;
-  padding-top: 11%;
+  padding-left: 276px;
+  padding-top: 87px;
+}
+
+.meet-video {
+  width: 459px;
+  height: 486px;
+  position: absolute;
+  top: 2902px;
+  left: 971px;
+}
+
+.skill-img {
+  width: 874px;
+  height: 495px;
+  position: absolute;
+  top: 2922px;
+  left: 609px;
 }

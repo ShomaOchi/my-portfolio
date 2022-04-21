@@ -7,22 +7,37 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Serif+JP:wght@500;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap"
       rel="stylesheet"
     />
     <title>My Portfolio</title>
   </head>
   <body>
-    <header>Shoma's portfolio</header>
+    <img src="image/bangi.JPG" class="bangi-img" />
+    <header>
+      <div><p class="header2">Shoma's portfolio</p></div>
+      <div class="icon-container">
+        <a href="https://www.instagram.com/ochin_ochi_09/"
+          ><img src="/image/Instagram.png" class="icon-img"
+        /></a>
+        <a href="https://twitter.com/OchiShoma"
+          ><img src="/image/2021 Twitter logo - blue.png" class="icon-img"
+        /></a>
+        <a href="https://github.com/ShomaOchi"
+          ><img src="/image/GitHub-Mark.png" class="icon-img"
+        /></a>
+      </div>
+    </header>
     <div class="top">
       <h1 class="topname">My portfolio</h1>
       <div class="mokuzi">
-        <h2>about</h2>
-        <h2>like</h2>
-        <h2>skill</h2>
+        <a href="#sec1" class="sec"><h2 class="mokuzi1">About</h2></a>
+        <a href="#sec2" class="sec"><h2 class="mokuzi2">Sport</h2></a>
+        <a href="#sec3" class="sec"><h2 class="mokuzi3">Skill</h2></a>
       </div>
     </div>
     <div class="about">
+      <div id="sec1"></div>
       <div class="about-tittle">
         <h1>About</h1>
       </div>
@@ -40,43 +55,46 @@
       <img src="image/aboutimg.JPG" class="about-img" />
     </div>
     <div class="like">
+      <div id="sec2"></div>
       <div class="like-page">
-        <div class="tittle">
-          <h1 class="like-tittle">Sports</h1>
+        <div class="like-tittle">
+          <h1>Sport</h1>
         </div>
         <div class="like-contents">
           <div class="like-contents-detail">
-            <h3>野球</h3>
-            <p>小学3年生～中学３年</p>
+            <h3 id="name4">野球</h3>
           </div>
           <div class="like-contents-detail">
-            <h3>陸上</h3>
-            <p>高校１年～大学３年</p>
+            <h3 id="name5">陸上</h3>
           </div>
           <div class="like-contents-detail">
-            <h3>スノーボード</h3>
-            <p>大学生１年生～？</p>
+            <h3 id="name6">スノーボード</h3>
           </div>
         </div>
       </div>
-      <img src="image/rikuzyou.JPG" class="like-image1" />
+      <div class="like-img-container">
+        <img src="image/rikuzyou.JPG" class="like-image1" />
+        <img src="image/yakyuu.JPEG" class="like-image1" />
+        <img src="image/snowboard.JPG" class="like-image1" />
+      </div>
     </div>
     <div class="skill">
+      <div id="sec3"></div>
       <div class="skill-page">
-        <div class="tittle">
-          <h1 class="skill-tittle">Skill</h1>
+        <div class="skill-tittle">
+          <h1>Skill</h1>
         </div>
         <div class="skill-contens">
           <div class="skill-contens-detail">
-            <h3>HTML・CSS</h3>
-            <p>GeekSalonで３か月</p>
+            <h3 id="name7">HTML・CSS</h3>
           </div>
           <div class="skill-contens-detail">
-            <h3>JavaScript</h3>
-            <p>勉強中...</p>
+            <h3 id="name8">JavaScript</h3>
           </div>
         </div>
       </div>
+      <img src="image/meet.jpg" class="skill-img" />
+      <video src="meetmeat.mp4" class="meet-video" autoplay muted loop></video>
     </div>
     <footer></footer>
     <script src="main.js"></script>
